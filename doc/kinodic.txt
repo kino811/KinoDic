@@ -1,12 +1,24 @@
 *kinodic.txt* Plugin for find content where internet in webbrowser
 
 Mappings:
-<Leader>kd or <Plug>KinodicEn2Kor
+<Leader>kde or <Plug>KinodicEn2Kor
     Find translation word for |<cword>| to show in webbrowser.
+
+<Leader>kdu or <Plug>KinodicUnity3d
+    Find |Unity3D| reference for |<cword>| to show in webbrowser.
+
+<Leader>kdm or <Plug>KinodicMsdn
+    Find |MSDN| reference for |<cword>| to show in webbrowser.
 
 Commands:
 :KinodicEn2Kor
     Find translation word for |<cword>| to show in webbrowser.
+
+:KinodicUnity3d
+    Find |Unity3D| reference for |<cword>| to show in webbrowser.
+
+:KinodicMsdn
+    Find |MSDN| reference for |<cword>| to show in webbrowser.
 
 *kinodic-settings*
 This plugin doesn't have any settings.
