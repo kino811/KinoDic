@@ -21,22 +21,4 @@ Functions
 How to Use
 ----------
 
-default keymaps:
-
-```vim
-" find word under cursor.
-map <unique> <Leader>kde <Plug>KinodicEn2korCur
-map <unique> <leader>kdu <plug>KinodicUnity3dCur
-map <unique> <leader>kdm <plug>KinodicMsdnCur
-```
-
-commands:
-
-```vim
-:KinodicEn2korCur
-:KinodicUnity3dCur
-:KinodicMsdnCur
-
-" [word] [word] ... is [sentence]
-:Kinodic (|dicID|) [word] [word] ...
-```
+[see document](doc/kinodic.txt)
