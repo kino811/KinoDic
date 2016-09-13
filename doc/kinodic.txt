@@ -1,27 +1,69 @@
-*kinodic.txt* Plugin for find content where internet in webbrowser
+*kinodic.txt* dictionary for finding reference programming language and for translation language
 
-Mappings:
+================================================================================
+                                                               *KinoDicContents*
+CONTENTS
+
+    1. Usage |KinoDicUsage|
+    2. Mappings |KinoDicMappings|
+    3. Commands |KinoDicCommands|
+    4. License |KinoDicLicense|
+
+================================================================================
+                                                                  *KinoDicUsage*
+Section 1. Usage
+
+When cursor on word, call command or input maped key, find about contents from
+internet's reference site and show by your default webbrowser.
+
+================================================================================
+                                                               *KinoDicMappings*
+Section 2. Mappings
+
 <Leader>kde or <Plug>KinodicEn2korCur
-    Find translation word for |<cword>| to show in webbrowser.
+    call |:KinodicEn2korCur|
 
 <Leader>kdu or <Plug>KinodicUnity3dCur
-    Find |Unity3D| reference for |<cword>| to show in webbrowser.
+    call |:KinodicUnity3dCur|
 
 <Leader>kdm or <Plug>KinodicMsdnCur
-    Find |MSDN| reference for |<cword>| to show in webbrowser.
+    call |:KinodicMsdnCur|
 
-Commands:
+================================================================================
+                                                               *KinoDicCommands*
+Section 3. Commands
+
+                                                             *:KinodicEn2korCur*
 :KinodicEn2korCur
-    Find translation word for |<cword>| to show in webbrowser.
+    Find |<cword>| from google.
 
+                                                            *:KinodicUnity3dCur*
 :KinodicUnity3dCur
-    Find |Unity3D| reference for |<cword>| to show in webbrowser.
+    Find |<cword>| from Unity3D reference page.
 
+                                                               *:KinodicMsdnCur*
 :KinodicMsdnCur
-    Find |MSDN| reference for |<cword>| to show in webbrowser.
+    Find |<cword>| from MSDN reference page.
 
-:Kinodic (|dicID|) [word] [word] ...
-    |dicID| : "en2kor", "unity3d", "msdn"
+                                                                      *:Kinodic*
+:Kinodic {KinoDicID} [{word-list}]
+    Find contents by dictionary object of {KinoDicID} about sentence.
+    Sentence is made from {word-list}.
+    if {word-list} is "hello" "hi" then sentence is "hello hi".
 
-*kinodic-settings*
-This plugin doesn't have any settings.
+                                                                     *{KinoDicID}*
+{KinoDicID}
+    "en2kor"
+    "unity3d"
+    "msdn"
+
+                                                                   *{word-list}*
+{word-list}
+    {word} list. like that {word} {word} ...
+
+================================================================================
+                                                                *KinoDicLicense*
+Section 4. License
+
+Free
+
