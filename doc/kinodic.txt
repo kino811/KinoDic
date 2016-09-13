@@ -1,0 +1,12 @@
+*kinodic.txt* Plugin for find content where internet in webbrowser
+
+Mappings:
+<Leader>kd or <Plug>KinodicEn2Kor
+    Find translation word for |<cword>| to show in webbrowser.
+
+Commands:
+:KinodicEn2Kor
+    Find translation word for |<cword>| to show in webbrowser.
+
+*kinodic-settings*
+This plugin doesn't have any settings.
